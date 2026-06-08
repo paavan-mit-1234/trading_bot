@@ -1,0 +1,35 @@
+2026-06-08 13:08:48 | INFO     | trading_bot.client | API request: GET /fapi/v1/ping
+2026-06-08 13:08:48 | DEBUG    | trading_bot.client | Request params: {}
+2026-06-08 13:08:49 | DEBUG    | trading_bot.client | Response [200]: {}
+2026-06-08 13:08:49 | INFO     | trading_bot.client | API success: GET /fapi/v1/ping -> HTTP 200
+2026-06-08 13:08:49 | INFO     | trading_bot.client | API request: GET /fapi/v1/time
+2026-06-08 13:08:49 | DEBUG    | trading_bot.client | Request params: {}
+2026-06-08 13:08:49 | DEBUG    | trading_bot.client | Response [200]: {'serverTime': 1780904328141}
+2026-06-08 13:08:49 | INFO     | trading_bot.client | API success: GET /fapi/v1/time -> HTTP 200
+2026-06-08 13:08:49 | INFO     | trading_bot.client | Clock offset to Binance: -1202 ms
+2026-06-08 13:08:49 | INFO     | trading_bot.client | API request: GET /fapi/v2/balance
+2026-06-08 13:08:49 | DEBUG    | trading_bot.client | Request params: {'timestamp': 1780904328141, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+2026-06-08 13:08:49 | DEBUG    | trading_bot.client | Response [200]: [{'accountAlias': 'AuSgXqAuAuoCmY', 'asset': 'FDUSD', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'AuSgXqAuAuoCmY', 'asset': 'U', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'AuSgXqAuAuoCmY', 'asset': 'BNB', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'AuSgXqAuAuoCmY', 'asset': 'ETH', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'AuSgXqAuAuoCmY', 'asset': 'BTC', 'balance': '0.01000000', 'crossWalletBalance': '0.01000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.01000000', 'maxWithdrawAmount': '0.01000000', 'marginAvailable': True, 'updateTime': 1780903822123}, {'accountAlias': 'AuSgXqAuAuoCmY', 'asset': 'USDT', 'balance': '4999.92418756', 'crossWalletBalance': '4999.92418756', 'crossUnPnl': '0.04513184', 'availableBalance': '4990.39847597', 'maxWithdrawAmount': '4990.39847597', 'marginAvailable': True, 'updateTime': 1780904202938}, {'accountAlias': 'AuSgXqAuAuoCmY', 'asset': 'USD1', 'balance': '0.00000000', 'crossWalletBalance': '0.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '0.00000000', 'maxWithdrawAmount': '0.00000000', 'marginAvailable': True, 'updateTime': 0}, {'accountAlias': 'AuSgXqAuAuoCmY', 'asset': 'USDC', 'balance': '5000.00000000', 'crossWalletBalance': '5000.00000000', 'crossUnPnl': '0.00000000', 'availableBalance': '5000.00000000', 'maxWithdrawAmount': '5000.00000000', 'marginAvailable': True, 'updateTime': 1780903822102}]
+2026-06-08 13:08:49 | INFO     | trading_bot.client | API success: GET /fapi/v2/balance -> HTTP 200
+2026-06-08 13:08:49 | INFO     | trading_bot.cli | Submitting order: {'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': '0.001', 'type': 'MARKET'}
+2026-06-08 13:08:49 | INFO     | trading_bot.orders | Placing BUY MARKET order for BTCUSDT
+2026-06-08 13:08:49 | INFO     | trading_bot.client | API request: GET /fapi/v1/time
+2026-06-08 13:08:49 | DEBUG    | trading_bot.client | Request params: {}
+2026-06-08 13:08:50 | DEBUG    | trading_bot.client | Response [200]: {'serverTime': 1780904329184}
+2026-06-08 13:08:50 | INFO     | trading_bot.client | API success: GET /fapi/v1/time -> HTTP 200
+2026-06-08 13:08:50 | INFO     | trading_bot.client | Clock offset to Binance: -1195 ms
+2026-06-08 13:08:50 | INFO     | trading_bot.client | API request: POST /fapi/v1/order
+2026-06-08 13:08:50 | DEBUG    | trading_bot.client | Request params: {'symbol': 'BTCUSDT', 'side': 'BUY', 'quantity': '0.001', 'type': 'MARKET', 'timestamp': 1780904329185, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+2026-06-08 13:08:50 | DEBUG    | trading_bot.client | Response [200]: {'orderId': 14484254411, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'ZajZdayzOB2PNT13QHqoGq', 'price': '0.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'MARKET', 'reduceOnly': False, 'closePosition': False, 'side': 'BUY', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'MARKET', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1780904329345}
+2026-06-08 13:08:50 | INFO     | trading_bot.client | API success: POST /fapi/v1/order -> HTTP 200
+2026-06-08 13:08:52 | INFO     | trading_bot.cli | Submitting order: {'symbol': 'BTCUSDT', 'side': 'SELL', 'quantity': '0.001', 'type': 'LIMIT', 'price': '80000', 'timeInForce': 'GTC'}
+2026-06-08 13:08:52 | INFO     | trading_bot.orders | Placing SELL LIMIT order for BTCUSDT
+2026-06-08 13:08:52 | INFO     | trading_bot.client | API request: GET /fapi/v1/time
+2026-06-08 13:08:52 | DEBUG    | trading_bot.client | Request params: {}
+2026-06-08 13:08:53 | DEBUG    | trading_bot.client | Response [200]: {'serverTime': 1780904332158}
+2026-06-08 13:08:53 | INFO     | trading_bot.client | API success: GET /fapi/v1/time -> HTTP 200
+2026-06-08 13:08:53 | INFO     | trading_bot.client | Clock offset to Binance: -1197 ms
+2026-06-08 13:08:53 | INFO     | trading_bot.client | API request: POST /fapi/v1/order
+2026-06-08 13:08:53 | DEBUG    | trading_bot.client | Request params: {'symbol': 'BTCUSDT', 'side': 'SELL', 'quantity': '0.001', 'type': 'LIMIT', 'price': '80000', 'timeInForce': 'GTC', 'timestamp': 1780904332159, 'recvWindow': 5000, 'signature': '***REDACTED***'}
+2026-06-08 13:08:53 | DEBUG    | trading_bot.client | Response [200]: {'orderId': 14484256079, 'symbol': 'BTCUSDT', 'status': 'NEW', 'clientOrderId': 'NBzCx2RPvnARHdcr3WE4QD', 'price': '80000.00', 'origQty': '0.0010', 'executedQty': '0.0000', 'cumQty': '0.0000', 'timeInForce': 'GTC', 'type': 'LIMIT', 'reduceOnly': False, 'closePosition': False, 'side': 'SELL', 'positionSide': 'BOTH', 'stopPrice': '0.00', 'workingType': 'CONTRACT_PRICE', 'priceProtect': False, 'origType': 'LIMIT', 'priceMatch': 'NONE', 'selfTradePreventionMode': 'EXPIRE_MAKER', 'goodTillDate': 0, 'updateTime': 1780904332324}
+2026-06-08 13:08:53 | INFO     | trading_bot.client | API success: POST /fapi/v1/order -> HTTP 200
