@@ -1,5 +1,7 @@
 # Trading Bot for Binance Futures Testnet (USDT-M)
 
+Built as my submission for the AI Agent Development internship at Primetrade.ai.
+
 A small Python command line tool I wrote to place orders on the Binance
 Futures Testnet. It supports Market, Limit and Stop-Limit orders, validates
 what you type before sending anything, and writes a log file of every request
